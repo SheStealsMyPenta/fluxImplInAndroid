@@ -8,6 +8,7 @@ import com.squareup.otto.Subscribe;
 
 public class MessageStore extends Store {
     private static MessageStore singletonMessage;
+
     private MyMessage message= new MyMessage();
     public MyMessage getMessage() {
         return message;

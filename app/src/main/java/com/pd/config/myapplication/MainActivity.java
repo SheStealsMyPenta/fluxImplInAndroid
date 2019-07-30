@@ -3,17 +3,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.pd.config.myapplication.flux_frame_impl.stores.InfoStore;
 import com.pd.config.myapplication.flux_frame_impl.stores.MessageStore;
 import com.pd.config.myapplication.flux_frame_java.BaseFluxActivity;
 import com.pd.config.myapplication.flux_frame_java.actions.ActionCreator;
 import com.pd.config.myapplication.flux_frame_java.dispatcher.Dispatcher;
 import com.pd.config.myapplication.flux_frame_java.stores.Store;
+import com.pd.config.myapplication.pojo.DataInfo;
+import com.pd.config.myapplication.services.LogicService;
 import com.squareup.otto.Subscribe;
+
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 public class MainActivity extends BaseFluxActivity {
     private MessageStore messageStore;
+    private InfoStore infoStore;
     @BindView(R.id.fluxText)
     TextView textView;
     @BindView(R.id.clickme)
@@ -39,6 +47,7 @@ public class MainActivity extends BaseFluxActivity {
         initDependencies();
         initStores();
         render();
+        renderList();
     }
 
     private void render() {
@@ -48,6 +57,7 @@ public class MainActivity extends BaseFluxActivity {
 
     private void initStores() {
         messageStore = new MessageStore();
+        infoStore = InfoStore.getAInfoStore();
     }
 
     @Override
@@ -66,7 +76,13 @@ public class MainActivity extends BaseFluxActivity {
     protected void onStoreChange(Store.StoreChangeEvent event) {
         if (event.type.equals("text")) {
             renderText(messageStore);
+        } else if(event.type.equals("info")){
+            renderList();
         }
+    }
+    private void renderList() {
+        List<DataInfo> infos = infoStore.getDataInfos();
+        //把adapter设置成infos列表
     }
     public void renderText(MessageStore store) {
         textView.setText(store.getMessage().getMessage());
