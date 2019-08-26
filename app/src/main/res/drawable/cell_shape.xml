@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 表示shape的四个角的角度。只适用于矩形shape，这里的角度是指圆角的程度 -->
+
+    <!-- 实心 -->
+    <solid android:color="@color/white"/>
+    <stroke android:color="@color/fbutton_color_emerald"
+        android:width="2dp"
+        />
+    <corners
+        android:bottomLeftRadius="6dip"
+        android:bottomRightRadius="6dip"
+        android:topLeftRadius="6dip"
+        android:topRightRadius="6dip"/>
+    <!-- 边框 -->
+
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fbutton_default_conner_radius">8dp</dimen>
+    <dimen name="fbutton_default_padding_left">10dp</dimen>
+    <dimen name="fbutton_default_padding_right">10dp</dimen>
+    <dimen name="fbutton_default_padding_top">5dp</dimen>
+    <dimen name="fbutton_default_padding_bottom">5dp</dimen>
+    <dimen name="fbutton_default_shadow_height">4dp</dimen>
+    <dimen name="bottom_btn_size">35dp</dimen>
+    <dimen name="setting_param_text_size">15dp</dimen>
+    <dimen name="transformer_add_btn_size">22dp</dimen>
+    <dimen name="cellTextSize">14dp</dimen>
+    <dimen name="childFont">14dp</dimen>
+</resources>

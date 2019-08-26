@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="测试绕组"
+            android:background="@color/title"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:orientation="horizontal"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/radioForRotate"
+                android:layout_weight="1"
+
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="A相"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/hiFre"
+
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="B相"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    android:id="@+id/midFre"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lowFre"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/white"
+                    android:text="C相"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/lowFreExtend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:buttonTint="@color/grey"
+                    android:paddingLeft="10dp"
+                    android:text="低压绕组II"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -16,7 +16,7 @@ public class Net_Handler extends Handler {
     @Override
     public void handleMessage(Message msg) {
         if(listener!=null){
-            super.handleMessage(msg);
+            listener.Net_Message_On(msg);
         }
     }
 }

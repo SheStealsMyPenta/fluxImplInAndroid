@@ -1,5 +1,20 @@
 package com.pd.config.myapplication.flux_frame_java.dispatcher;
 
+import android.widget.LinearLayout;
+
+import com.pd.config.myapplication.activities.MainActivity;
+import com.pd.config.myapplication.flux_frame_impl.actions.ControllerAction;
+import com.pd.config.myapplication.flux_frame_impl.actions.DataAction;
+import com.pd.config.myapplication.flux_frame_impl.actions.InfoAction;
+import com.pd.config.myapplication.flux_frame_impl.actions.LineAction;
+import com.pd.config.myapplication.flux_frame_impl.actions.MainActivityAction;
+import com.pd.config.myapplication.flux_frame_impl.actions.VitalSettingsAction;
+import com.pd.config.myapplication.flux_frame_impl.stores.ControllerStore;
+import com.pd.config.myapplication.flux_frame_impl.stores.DataStore;
+import com.pd.config.myapplication.flux_frame_impl.stores.InfoStore;
+import com.pd.config.myapplication.flux_frame_impl.stores.LineStore;
+import com.pd.config.myapplication.flux_frame_impl.stores.MainActivityStore;
+import com.pd.config.myapplication.flux_frame_impl.stores.VitalSettingsStore;
 import com.pd.config.myapplication.flux_frame_java.actions.Action;
 import com.pd.config.myapplication.flux_frame_java.stores.Store;
 
@@ -38,7 +53,34 @@ public class Dispatcher {
     private void post(Action action) {
         //invoke each  action's callback function
         for (Store store : stores) {
-            store.onAction(action);
+            if(store!=null){
+                if (action.getType().equals(LineAction.ADD_POINT_TO_TEST_LINE)||action.getType().equals(LineAction.ADD_LINES)||action.getType().equals(LineAction.CHANGE_LINE_STATE)||action.getType().equals(LineAction.DELETE_LINES)){
+                     if(store instanceof LineStore){
+                         store.onAction(action);
+                     }
+                }else if(DataAction.listOfDataAction.contains(action.getType())) {
+                    if(store instanceof DataStore){
+                        store.onAction(action);
+                    }
+                } else if(ControllerAction.listOfControllerAction.contains(action.getType())){
+                   if (store instanceof ControllerStore){
+                       store.onAction(action);
+                   }
+                } else if(InfoAction.listOfInfoAction.contains(action.getType())){
+                    if(store instanceof InfoStore){
+                        store.onAction(action);
+                    }
+                }else if(MainActivityAction.CHANGE_STATE_BTN.equals(action.getType())||MainActivityAction.SET_POSITION.equals(action.getType())||MainActivityAction.SET_STATE.equals(action.getType())||MainActivityAction.SET_TEST_PARAMS.equals(action.getType())){
+                    if(store instanceof MainActivityStore){
+                        store.onAction(action);
+                    }
+                } else if(VitalSettingsAction.SET_VITAL_SETTINGS.equals(action.getType())||VitalSettingsAction.NOTIFY.equals(action.getType())||VitalSettingsAction.SET_OPERATION.equals(action.getType())||VitalSettingsAction.NET_WORK_ERROR.equals(action.getType())){
+                   if(store instanceof VitalSettingsStore){
+                       store.onAction(action);
+                   }
+                }
+            }
+
         }
 
     }

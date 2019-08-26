@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="inputAmplitude">
+        <item>0 - 1V</item>
+        <item>1 - 5V</item>
+    </string-array>
+    <string-array name="Impedance">
+        <item>0 - 50Ω</item>
+        <item>1 - 1MΩ</item>
+    </string-array>
 </resources>

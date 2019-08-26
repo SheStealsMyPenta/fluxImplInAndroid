@@ -15,11 +15,17 @@ public abstract class Store {
     }
     //register view to bus, if event happens activity will response a callback function.
     public void register(final Object view) {
-        bus.register(view);
+
+            bus.register(view);
+
+
     }
 
     public void unregister(final Object view) {
-        bus.register(view);
+
+            bus.unregister(view);
+
+
     }
    //use bus to post a event to notify activity invoke it's callback function.
    protected   void emitStoreChange() {

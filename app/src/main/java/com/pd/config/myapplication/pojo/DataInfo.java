@@ -4,13 +4,20 @@ import java.io.Serializable;
 import java.util.List;
 
 public class DataInfo implements Serializable {
-    public DataInfo(int sortNum) {
+    public DataInfo(String sortNum) {
         this.sortNum = sortNum;
     }
-    private int sortNum;
-    private String  dateFile; //数据文件
-    private String nameOfTransformer; //变压器
-    private String nameOfCompany;//制造厂家
+
+    public DataInfo() {
+    }
+
+    private String sortNum;
+
+
+
+    private String  dataFile; //数据文件
+    private String nameOfTransformer; //变压器 || 设备
+    private String nameOfCompany;//制造厂家 ||单位
     private String dataInput;//输入端
     private String dataOutput;//输出端
     private String testFrequency; //测试频率
@@ -25,21 +32,30 @@ public class DataInfo implements Serializable {
     private String typeOfTheScan; //线性扫描或者对数扫描
     private String testTime; //测试时间
 
-    public int getSortNum() {
+    public String getTestSpecificTime() {
+        return testSpecificTime;
+    }
+
+    public void setTestSpecificTime(String testSpecificTime) {
+        this.testSpecificTime = testSpecificTime;
+    }
+
+    private String testSpecificTime; //精确时间
+    public String getDataFile() {
+        return dataFile;
+    }
+
+    public void setDataFile(String dataFile) {
+        this.dataFile = dataFile;
+    }
+    public String getSortNum() {
         return sortNum;
     }
 
-    public void setSortNum(int sortNum) {
+    public void setSortNum(String sortNum) {
         this.sortNum = sortNum;
     }
 
-    public String getDateFile() {
-        return dateFile;
-    }
-
-    public void setDateFile(String dateFile) {
-        this.dateFile = dateFile;
-    }
 
     public String getNameOfTransformer() {
         return nameOfTransformer;

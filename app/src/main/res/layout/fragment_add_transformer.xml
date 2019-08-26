@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                >
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:id="@+id/title"
+                    android:text="     添加设备"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="名         称:"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="@dimen/childFont"
+
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="33.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/childFont"
+                    android:id="@+id/nameOfTheTransformer"
+                    android:background="@drawable/btn_shape_operater_border"
+                    android:layout_marginRight="150dp"
+                    android:paddingLeft="20dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="单         位:"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+
+                    android:layout_gravity="center_vertical"
+                    />
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33.5dp"
+                    android:completionThreshold="0"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+
+                    android:layout_weight="1"
+                    android:textSize="@dimen/childFont"
+                    android:layout_marginRight="150dp"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/nameOfSubstation"
+                    android:background="@drawable/btn_shape_operater_border"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="型         号:"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:layout_gravity="center_vertical"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="33.5dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/childFont"
+                    android:layout_marginRight="150dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/btn_shape_operater_border"
+                    android:id="@+id/typeOfInstrument"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="出厂序号:"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:paddingRight="2dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="33.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/childFont"
+                    android:layout_marginRight="150dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/btn_shape_operater_border"
+                    android:id="@+id/CreationNumber"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="制造厂家:"
+                    android:paddingRight="2dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:layout_gravity="center_vertical"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="33.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+
+                    android:textSize="@dimen/childFont"
+                    android:id="@+id/manufacturer"
+                    android:layout_marginRight="150dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/btn_shape_operater_border"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="生产日期:"
+                    android:paddingRight="2dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:layout_gravity="center_vertical"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="33.5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/childFont"
+
+                        android:inputType="number"
+                        android:id="@+id/dateOfCreation"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/btn_shape_operater_border"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=" 年"
+
+                        android:textSize="@dimen/childFont"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="相         数:"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:layout_gravity="center_vertical"
+                    />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/childFont"
+                    android:orientation="horizontal"
+                    android:id="@+id/numberOfPhase"
+                    >
+                    <RadioButton
+                        android:textSize="@dimen/childFont"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:text="三相"
+
+                        android:id="@+id/triPhase"
+                        android:checked="true"
+                        />
+                    <RadioButton
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:text="单相"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/singlePhase"
+                        android:checked="false"
+                        android:textSize="@dimen/childFont"
+
+                        />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="绕  组  数:"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/childFont"
+                    android:layout_gravity="center_vertical"
+                    />
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:orientation="horizontal"
+                    android:id="@+id/numberOfRotate"
+                    >
+                    <RadioButton
+
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:text="三绕组"
+                        android:id="@+id/threeRounds"
+                        android:checked="true"
+                        android:textSize="@dimen/childFont"
+                        />
+                    <RadioButton
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:text="双绕组"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/doubleRounds"
+                        android:textSize="@dimen/childFont"
+
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1.5dp"
+    android:background="@color/grey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        android:layout_weight="7.9"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_shape_operater"
+                android:text="添加"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/confirmBtn"
+                android:textSize="@dimen/transformer_add_btn_size" />
+
+            <Button
+
+                android:layout_weight="2"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_shape_operater"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:id="@+id/cancelBtn"
+                android:textSize="@dimen/transformer_add_btn_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

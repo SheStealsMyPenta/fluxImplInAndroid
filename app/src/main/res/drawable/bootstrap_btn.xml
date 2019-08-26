@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--圆角-->
+            <gradient
+                android:angle="270"
+                android:endColor="@color/fbutton_color_emerald"
+                android:startColor="#FFFFFF"/>
+            <corners
+                android:bottomLeftRadius="6dip"
+                android:bottomRightRadius="6dip"
+                android:topLeftRadius="6dip"
+                android:topRightRadius="6dip"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:drawable="@color/white"/>
+    <item android:state_hovered="true" android:drawable="@color/white"/>  <!-- hoverd为鼠标的悬停状态 -->
+    <item >
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#99b638"
+                android:startColor="#99b638"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/blue_light"/>
+            <corners
+                android:bottomLeftRadius="6dip"
+                android:bottomRightRadius="6dip"
+                android:topLeftRadius="6dip"
+                android:topRightRadius="6dip"/>
+        </shape>
+
+    </item>
+
+
+</selector>

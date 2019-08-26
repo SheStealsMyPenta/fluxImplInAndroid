@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:background="@color/title"
+           android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="单位名称"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="8.6"-->
+                        <!--android:text="序 号"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:id="@+id/sort"-->
+                        <!--android:textAlignment="center"-->
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="1.0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/grey"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:id="@+id/text1"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="变电站名"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1.0dp"-->
+                    <!--android:background="@color/grey"/>-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/substationPicker"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+
+                    ></ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/grey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:background="@color/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:text="设备名称      "
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--&gt;-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="8.6"-->
+                            <!--android:text="序 号"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:textSize="18dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--/>-->
+                        <!--<View-->
+                            <!--android:layout_width="1.0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/grey"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="变压器名"-->
+                            <!--android:textSize="18dp"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1.0dp"-->
+                        <!--android:background="@color/grey"/>-->
+                    <ListView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/transformerPicker"
+                    android:layout_weight="1"
+                    >
+
+                </ListView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="@color/grey"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="horizontal"
+                        >
+                        <Button
+
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/btn_shape_operater"
+                            android:text="选择"
+                            android:textColor="@color/white"
+                            android:id="@+id/chooseTransBtn"
+                            android:visibility="gone"
+                            android:textSize="@dimen/transformer_add_btn_size" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="7dp"/>
+
+                        <Button
+                            android:id="@+id/addTransBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_shape_operater"
+                            android:text="新增"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/transformer_add_btn_size" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="7dp"/>
+                        <Button
+                            android:layout_margin="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/btn_shape_operater"
+                            android:text="修改"
+                            android:textColor="@color/white"
+                            android:id="@+id/modifyTrans"
+                            android:textSize="@dimen/transformer_add_btn_size" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="7dp"/>
+                        <Button
+                            android:layout_margin="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/deleteTransBtn"
+                            android:background="@drawable/btn_shape_operater"
+                            android:text="删除"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/transformer_add_btn_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

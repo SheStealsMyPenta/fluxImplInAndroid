@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hardGrey"
+                android:text="电 气 设 备 特 性 测 试 系 统 "
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="2.0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:visibility="gone"
+            android:id="@+id/cellLayout"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="1.3dp"
+                android:layout_marginBottom="1.3dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/cell_shape_border"
+                android:orientation="vertical"
+                android:id="@+id/cellFour"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="单元1"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:id="@+id/cellFourText"
+                    android:textColor="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/divide"
+                    android:layout_marginLeft="0.2dp"
+                    android:layout_marginRight="0.2dp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/cellFourState"
+                    android:text="未连接"
+                    android:visibility="visible"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:textColor="@color/red"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgFour"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="1.3dp"
+                android:layout_marginBottom="1.3dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/cell_shape_border"
+                android:orientation="vertical"
+                android:id="@+id/cellThree"
+                >
+
+                <TextView
+                    android:id="@+id/cellThreeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="单元2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cellTextSize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/divideTwo"
+                    android:layout_marginLeft="0.2dp"
+                    android:layout_marginRight="0.2dp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/cellThreeState"
+                    android:text="未连接"
+                    android:visibility="visible"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:textColor="@color/red"
+                    />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_weight="1"
+    android:visibility="gone"
+    android:id="@+id/imgThree"
+    android:src="@drawable/full"
+    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="1.3dp"
+                android:layout_marginBottom="1.3dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:visibility="gone"
+                android:background="@drawable/cell_shape_border"
+                android:orientation="vertical"
+                android:id="@+id/cellTwo"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="单元3"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:id="@+id/cellTwoText"
+                    android:textColor="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="0.2dp"
+                    android:layout_marginRight="0.2dp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="未连接"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:textColor="@color/red"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="1.3dp"
+                android:layout_marginBottom="1.3dp"
+                android:layout_marginRight="2dp"
+                android:visibility="gone"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/cell_shape_border"
+                android:orientation="vertical"
+                android:id="@+id/cellOne"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="单元4"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:id="@+id/cellOneText"
+                    android:textColor="@color/white"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="0.2dp"
+                    android:layout_marginRight="0.2dp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="未连接"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/cellTextSize"
+                    android:textColor="@color/red"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:lineSpacingMultiplier="1.1"
+                android:text=" 采集特性曲线列表"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+            <View
+                android:id="@+id/run_test_DFT2_v4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#000000" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:orientation="horizontal">
+                <ListView
+                    android:id="@+id/infostoreListview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textSize="5dp"
+                android:text=""
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ListView
+                        android:id="@+id/dataView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnLayout01"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/connect"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_operator_01"
+                    android:elevation="60dp"
+                    android:text="配 置"
+                    android:textSize="15dp" />
+                <Button
+                    android:id="@+id/trigger"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_operator_01"
+                    android:elevation="60dp"
+                    android:text="启  动"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/manage"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_operator_01"
+                    android:elevation="60dp"
+                    android:text="数  据"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/setting"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_operator_01"
+                    android:elevation="60dp"
+                    android:text="报  告"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/theController"
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:layout_weight="23"
+                            >
+                         <com.pd.config.myapplication.views.RotateTextView
+                             android:layout_width="match_parent"
+                             android:layout_marginTop="100dp"
+                             android:textAlignment="center"
+                             android:layout_marginLeft="10dp"
+                             android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="14"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:text="频率(%)"
+
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingBottom="2dp"
+                  
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/c_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fbutton_color_silver"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/linear_like_btn"
+
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/firstLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_shape_operater_border"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="＋"
+                            android:textSize="30dp"
+                            android:visibility="visible" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:id="@+id/firstLineView"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox01"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="MOMA01"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text01"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_weight="1.1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn01"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="＋"
+                            android:id="@+id/secondLine"
+                            android:textAlignment="center"
+                            android:textSize="30dp"
+                            android:gravity="center_vertical"
+                            android:visibility="visible"
+                            android:background="@drawable/btn_shape_operater_border"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:id="@+id/secondLineView"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox02"
+                                android:layout_weight="1.3"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="LOLb01"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text02"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5px"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn02"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/thirdLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_shape_operater_border"
+                            android:gravity="center_vertical"
+                            android:text="＋"
+                            android:textAlignment="center"
+                            android:textSize="30dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:id="@+id/thirdLineView"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox03"
+                                android:layout_weight="1.3"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="LOLb01"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text03"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5px"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn03"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="＋"
+                            android:id="@+id/forthLine"
+                            android:textAlignment="center"
+                            android:textSize="30dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/btn_shape_operater_border"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:id="@+id/forthLineView"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.3"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox04"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:layout_height="match_parent"
+                                android:text="LOLb01"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text04"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5px"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn04"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/fifthLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="＋"
+
+                            android:background="@drawable/btn_shape_operater_border"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:textSize="30dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:id="@+id/fifthLineView"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.3"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox05"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="LOLb01"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+
+                                android:textSize="14dp"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text05"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5px"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                            android:layout_weight="1.1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn05"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="＋"
+                            android:id="@+id/sixthLine"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/btn_shape_operater_border"
+                            android:textAlignment="center"
+                            android:textSize="30dp"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:id="@+id/sixthLineView"
+                            android:orientation="horizontal"
+                            android:background="@drawable/btn_shape_operater_border"
+                            >
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.3"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/checkbox06"
+                                />
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="LOLb01"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:textAlignment="center"
+                                android:gravity="center_vertical"
+                                android:id="@+id/text06"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <View
+                                android:layout_width="5px"
+                                android:layout_height="0px"/>
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/delete"
+                                android:background="@drawable/btn_shape"
+                                android:id="@+id/deleteBtn06"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/fbutton_color_silver"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="2.0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+       <LinearLayout
+           android:id="@+id/btnLayout02"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="7"
+           android:orientation="vertical"
+           >
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="绕组类型"-->
+
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+
+    <Button
+        android:id="@+id/typeOfRotate"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="60dp"
+        android:background="@drawable/btn_operator_01"
+        android:text="绕组类型\n高压绕组"
+        android:lineSpacingExtra="6dp"
+        android:textSize="14dp" />
+
+
+
+               <Button
+                   android:id="@+id/typeOfShowUp"
+                   android:layout_width="110dp"
+                   android:layout_weight="1"
+                   android:visibility="invisible"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/btn_operator_01"
+                   android:elevation="60dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:lineSpacingExtra="6dp"
+                   android:text="显示模式\n线性显示"
+                   android:textSize="14dp" />
+
+               <Button
+                   android:id="@+id/frequencyScope"
+                   android:layout_width="110dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_weight="1"
+                   android:layout_height="match_parent"
+                   android:lineSpacingExtra="6dp"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/btn_operator_01"
+                   android:elevation="60dp"
+                   android:text="显示范围\n全频段"
+                   android:textAllCaps="false"
+                   android:textSize="14dp" />
+       </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

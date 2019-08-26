@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f0f0f0"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="扫频模式"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            />
+        
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1.5dp"
+    android:background="@color/grey"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.25"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/typeOfScan"
+        >
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="线性扫描"
+
+            android:textSize="14dp"
+            android:checked="true"
+            android:id="@+id/linearScan"
+            />
+
+        <RadioButton
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="对数扫描"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:id="@+id/logScan"
+            />
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/grey"/>
+  <com.pd.config.myapplication.views.MyRadioGroup
+      android:layout_marginLeft="2dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1.1"
+      android:orientation="horizontal"
+
+      android:id="@+id/frequencyGroup"
+      >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:id="@+id/firstOne"
+    >
+
+    <RadioButton
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/frequencyModeOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:checked="true"
+        android:textSize="14dp"
+        android:text="变压器设备"
+
+        />
+    <RadioButton
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/frequencyModeTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="14dp"
+        android:visibility="gone"
+        android:text="模式2 : 1kHz - 100kHz 100点"
+        />
+
+    <RadioButton
+        android:id="@+id/frequencyModeThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="2"
+        android:paddingLeft="10dp"
+        android:text="互感器设备"
+        android:textSize="14dp" />
+    <RadioButton
+
+        android:id="@+id/frequencyModeCustom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="其他设备:"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        />
+</LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:visibility="invisible"
+          android:id="@+id/secondOne"
+          >
+
+          <RadioButton
+              android:layout_marginLeft="15dp"
+              android:paddingLeft="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textSize="14dp"
+              android:id="@+id/frequencyModeFour"
+              android:text="模式4 : 10Hz - 1MHz 1099点"
+
+              />
+          <RadioButton
+              android:layout_marginLeft="15dp"
+              android:paddingLeft="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textSize="14dp"
+              android:id="@+id/frequencyModeFive"
+              android:text="模式5 : 10Hz - 2MHz 1199点"
+
+              />
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/frequencyModeSix"
+              android:text="模式6 : 10Hz - 10MHz 1999点"
+              android:textSize="14dp"
+              android:layout_marginLeft="15dp"
+              android:paddingLeft="10dp"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"/>
+
+      </LinearLayout>
+
+
+  </com.pd.config.myapplication.views.MyRadioGroup>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.8"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/hideLinenar"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/setFrequencyRange"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  扫频范围:"
+                android:layout_marginLeft="15dp"
+
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="33.5dp"
+                android:id="@+id/startFrequency"
+                android:inputType="numberDecimal"
+
+                android:textSize="14dp"
+                android:text="1"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/btn_shape_operater_border"
+                style="@style/Widget.AppCompat.EditText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" kHZ-----"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="33.5dp"
+                android:id="@+id/endFrequency"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/btn_shape_operater_border"
+                android:textSize="14dp"
+                android:text="1000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" kHZ"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/setPoints"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="  扫描点数:"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="33.5dp"
+                android:id="@+id/numberOfPoints"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/btn_shape_operater_border"
+                android:textSize="14dp"
+                android:text="1000"
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 点"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
