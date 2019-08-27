@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25px"
         android:textAlignment="center"
        android:gravity="center_vertical"
      android:text="测试参数"
@@ -23,7 +23,7 @@
 </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="2px"
         android:background="@color/grey"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,15 +34,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
+            android:paddingLeft="2px"
+            android:paddingRight="2px"
             android:layout_weight="3"
 
             android:background="@drawable/layout_operator_grey"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="40px"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -50,21 +50,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="设置"
-                    android:textSize="20dp"
+                    android:textSize="20px"
                     android:textColor="@color/black"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="20px"
                     android:gravity="center_vertical"
                     />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:background="@color/grey"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:elevation="20dp"
-                android:translationZ="20dp"
+                android:layout_height="90px"
+                android:elevation="20px"
+                android:translationZ="20px"
                 android:id="@+id/transformer_layout"
                 android:background="@drawable/shape_settig"
                 android:orientation="horizontal"
@@ -83,7 +83,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:gravity="left|center_vertical"
                         android:text="单        位:"
                         android:textColor="@color/black"
@@ -97,7 +97,7 @@
                         android:layout_weight="1"
                         android:gravity="left|center_vertical"
                         android:text="设        备:"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size" />
 
@@ -111,16 +111,16 @@
                     >
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="50px"
                         android:layout_weight="1">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginRight="30dp"
-                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5px"
+                            android:layout_marginRight="30px"
+                            android:layout_marginBottom="5px"
                             android:layout_weight="1"
                             android:gravity="left|center_vertical"
                             android:text=""
@@ -131,12 +131,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
 
-                        android:layout_height="50dp"
+                        android:layout_height="50px"
                         android:layout_weight="1"
                         >
                         <TextView
-                            android:layout_marginBottom="5dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5px"
+                            android:layout_marginTop="5px"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center_vertical"
@@ -146,7 +146,7 @@
                             android:id="@+id/nameOfTheTransformer"
                             android:textColor="@color/black"
                             android:textSize="@dimen/setting_param_text_size"
-                            android:layout_marginRight="30dp"
+                            android:layout_marginRight="30px"
                             />
 
                     </LinearLayout>
@@ -156,14 +156,14 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_height="1.5px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
                 android:id="@+id/divideLine1"
                 android:background="@color/grey"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
                 android:id="@+id/rotateTypeLayout"
                 android:orientation="horizontal"
                 >
@@ -180,7 +180,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="3.5"
                         android:gravity="left|center_vertical"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:text="测试绕组:"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size" />
@@ -199,9 +199,9 @@
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:layout_gravity="center_vertical"
-                      android:layout_marginTop="5dp"
-                      android:layout_marginRight="30dp"
-                      android:layout_marginBottom="5dp"
+                      android:layout_marginTop="5px"
+                      android:layout_marginRight="30px"
+                      android:layout_marginBottom="5px"
                       android:layout_weight="1"
                       android:gravity="left|center_vertical"
                       android:text="A相"
@@ -216,15 +216,15 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_height="1.5dp"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="20px"
+                android:layout_height="1.5px"
                 android:id="@+id/divideLine2"
                 android:background="@color/grey"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
                 android:visibility="gone"
                 android:id="@+id/positionLayout"
 
@@ -242,7 +242,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="3.5"
                         android:text="分接位置:"
-                         android:paddingLeft="20dp"
+                         android:paddingLeft="20px"
                         android:textSize="@dimen/setting_param_text_size"
                         android:textColor="@color/black"
 
@@ -259,8 +259,8 @@
                     android:orientation="vertical"
                     >
                     <TextView
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5px"
+                        android:layout_marginTop="5px"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
@@ -270,7 +270,7 @@
                         android:text="9a"
                         android:id="@+id/positions"
                         android:textColor="@color/black"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="30px"
                         />
 
                 </LinearLayout>
@@ -279,14 +279,14 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:id="@+id/divideLine3"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="20px"
                 android:background="@color/grey"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="100px"
                 android:layout_weight="2"
                 android:visibility="gone"
                 android:id="@+id/inputAndOutput"
@@ -312,7 +312,7 @@
                             android:layout_weight="1"
                             android:text="激  励  端:"
                             android:gravity="left|center_vertical"
-                            android:paddingLeft="20dp"
+                            android:paddingLeft="20px"
                             android:textColor="@color/black"
                             android:textSize="@dimen/setting_param_text_size"
                             />
@@ -323,7 +323,7 @@
                             android:layout_weight="1"
                             android:gravity="left|center_vertical"
                             android:text="响  应  端:"
-                            android:paddingLeft="20dp"
+                            android:paddingLeft="20px"
                             android:textColor="@color/black"
                             android:textSize="@dimen/setting_param_text_size" />
 
@@ -342,8 +342,8 @@
                             android:layout_weight="1"
                             >
                             <TextView
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5px"
+                                android:layout_marginBottom="5px"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center_vertical"
@@ -353,7 +353,7 @@
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/setting_param_text_size"
                                 android:id="@+id/input"
-                                android:layout_marginRight="30dp"
+                                android:layout_marginRight="30px"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -362,8 +362,8 @@
                             android:layout_weight="1"
                             >
                             <TextView
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5px"
+                                android:layout_marginTop="5px"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center_vertical"
@@ -373,7 +373,7 @@
                                 android:id="@+id/output"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/setting_param_text_size"
-                                android:layout_marginRight="30dp"
+                                android:layout_marginRight="30px"
                                 />
 
                         </LinearLayout>
@@ -384,15 +384,15 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:id="@+id/divideLine4"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="20px"
                 android:background="@color/grey"/>
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="125dp"
+                android:layout_height="125px"
                 android:focusableInTouchMode="true"
                 android:id="@+id/scanAttr_InfoLayout"
              >
@@ -408,7 +408,7 @@
                         android:layout_weight="1"
                         android:gravity="left|center_vertical"
                         android:text="扫描设备:"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size" />
                     <TextView
@@ -419,7 +419,7 @@
                         android:visibility="gone"
                         android:id="@+id/scanRangeTitle"
                         android:gravity="left|center_vertical"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size"
                         />
@@ -431,7 +431,7 @@
                         android:visibility="gone"
                         android:id="@+id/scanPointTitle"
                         android:gravity="left|center_vertical"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size"
                         />
@@ -443,8 +443,8 @@
                     android:orientation="vertical"
                     >
                     <TextView
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5px"
+                        android:layout_marginBottom="5px"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
@@ -455,11 +455,11 @@
                         android:clickable="false"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="30px"
                         />
                     <TextView
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5px"
+                        android:layout_marginBottom="5px"
                         android:layout_width="match_parent"
                         android:clickable="false"
                         android:layout_height="match_parent"
@@ -471,11 +471,11 @@
                         android:id="@+id/frequency"
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="30px"
                         />
                     <TextView
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5px"
+                        android:layout_marginBottom="5px"
                   
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -487,7 +487,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/setting_param_text_size"
                         android:id="@+id/numberOfPointss"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="30px"
                         />
 
 
@@ -496,11 +496,11 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:background="@color/grey"/>
               <LinearLayout
                   android:layout_width="match_parent"
-                  android:layout_height="60dp"
+                  android:layout_height="60px"
 
                   android:orientation="vertical"
                   >
@@ -511,9 +511,9 @@
                       >
                       <Button
                           android:layout_width="match_parent"
-                          android:layout_margin="5dp"
+                          android:layout_margin="5px"
                           android:layout_height="match_parent"
-                          android:textSize="22dp"
+                          android:textSize="22px"
                           android:id="@+id/confirm"
                           android:text="测  试"
                           android:textColor="@color/white"
@@ -523,8 +523,8 @@
                       <Button
                           android:layout_width="match_parent"
                           android:layout_height="match_parent"
-                          android:textSize="22dp"
-                          android:layout_margin="5dp"
+                          android:textSize="22px"
+                          android:layout_margin="5px"
                           android:layout_weight="1"
                           android:id="@+id/cancel"
                           android:text="取  消"
@@ -536,11 +536,11 @@
               </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:background="@color/grey"/>
         </LinearLayout>
 <View
-    android:layout_width="1dp"
+    android:layout_width="1px"
     android:layout_height="match_parent"
     android:background="@color/grey"
  />
@@ -559,7 +559,7 @@
                 android:layout_weight="1" />
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="0px"
                 android:background="@color/grey"/>
 
 

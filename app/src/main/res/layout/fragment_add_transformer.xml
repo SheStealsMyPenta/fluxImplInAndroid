@@ -19,16 +19,16 @@
             >
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="40px"
                 android:background="@color/title"
                 >
                 <TextView
-                    android:layout_marginTop="4dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4px"
+                    android:layout_marginLeft="6px"
+                    android:layout_marginRight="6px"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textSize="18dp"
+                    android:textSize="18px"
                     android:id="@+id/title"
                     android:text="     添加设备"
                     android:textColor="@color/black"
@@ -38,7 +38,7 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.5dp"
+                android:layout_height="1.5px"
                 android:background="@color/grey"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,15 +60,15 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="33.5dp"
+                    android:layout_height="33.5px"
                     android:layout_gravity="center_vertical"
                     android:gravity="left|center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/childFont"
                     android:id="@+id/nameOfTheTransformer"
                     android:background="@drawable/btn_shape_operater_border"
-                    android:layout_marginRight="150dp"
-                    android:paddingLeft="20dp"
+                    android:layout_marginRight="150px"
+                    android:paddingLeft="20px"
 
                     />
 
@@ -94,15 +94,15 @@
                     />
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
-                    android:layout_height="33.5dp"
+                    android:layout_height="33.5px"
                     android:completionThreshold="0"
                     android:layout_gravity="center_vertical"
                     android:gravity="left|center_vertical"
 
                     android:layout_weight="1"
                     android:textSize="@dimen/childFont"
-                    android:layout_marginRight="150dp"
-                    android:paddingLeft="20dp"
+                    android:layout_marginRight="150px"
+                    android:paddingLeft="20px"
                     android:id="@+id/nameOfSubstation"
                     android:background="@drawable/btn_shape_operater_border"
                     />
@@ -127,14 +127,14 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="33.5dp"
+                    android:layout_height="33.5px"
 
                     android:layout_gravity="center_vertical"
                     android:gravity="left|center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/childFont"
-                    android:layout_marginRight="150dp"
-                    android:paddingLeft="20dp"
+                    android:layout_marginRight="150px"
+                    android:paddingLeft="20px"
                     android:background="@drawable/btn_shape_operater_border"
                     android:id="@+id/typeOfInstrument"
                     />
@@ -154,18 +154,18 @@
                     android:textColor="@color/black"
                     android:textAlignment="center"
                     android:textSize="@dimen/childFont"
-                    android:paddingRight="2dp"
+                    android:paddingRight="2px"
                     android:layout_gravity="center_vertical"
                     />
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="33.5dp"
+                    android:layout_height="33.5px"
                     android:layout_gravity="center_vertical"
                     android:gravity="left|center_vertical"
                     android:layout_weight="1"
                     android:textSize="@dimen/childFont"
-                    android:layout_marginRight="150dp"
-                    android:paddingLeft="20dp"
+                    android:layout_marginRight="150px"
+                    android:paddingLeft="20px"
                     android:background="@drawable/btn_shape_operater_border"
                     android:id="@+id/CreationNumber"
                     />
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="制造厂家:"
-                    android:paddingRight="2dp"
+                    android:paddingRight="2px"
                     android:textColor="@color/black"
                     android:textAlignment="center"
                     android:textSize="@dimen/childFont"
@@ -190,15 +190,15 @@
                     />
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="33.5dp"
+                    android:layout_height="33.5px"
                     android:layout_gravity="center_vertical"
                     android:gravity="left|center_vertical"
                     android:layout_weight="1"
 
                     android:textSize="@dimen/childFont"
                     android:id="@+id/manufacturer"
-                    android:layout_marginRight="150dp"
-                    android:paddingLeft="20dp"
+                    android:layout_marginRight="150px"
+                    android:paddingLeft="20px"
                     android:background="@drawable/btn_shape_operater_border"
 
                     />
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="生产日期:"
-                    android:paddingRight="2dp"
+                    android:paddingRight="2px"
                     android:textColor="@color/black"
                     android:textAlignment="center"
                     android:textSize="@dimen/childFont"
@@ -224,15 +224,15 @@
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="30px"
                     >
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="33.5dp"
+                        android:layout_height="33.5px"
                         android:layout_gravity="center_vertical"
                         android:gravity="left|center_vertical"
                         android:layout_weight="2"
@@ -240,7 +240,7 @@
 
                         android:inputType="number"
                         android:id="@+id/dateOfCreation"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="20px"
                         android:background="@drawable/btn_shape_operater_border"
                         />
                     <TextView
@@ -281,9 +281,9 @@
                     />
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:layout_weight="1"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="30px"
                     android:layout_gravity="center_vertical"
                     android:textSize="@dimen/childFont"
                     android:orientation="horizontal"
@@ -291,7 +291,7 @@
                     >
                     <RadioButton
                         android:textSize="@dimen/childFont"
-                        android:layout_width="125dp"
+                        android:layout_width="125px"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:layout_gravity="center_vertical"
@@ -301,12 +301,12 @@
                         android:checked="true"
                         />
                     <RadioButton
-                        android:layout_width="125dp"
+                        android:layout_width="125px"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:layout_gravity="center_vertical"
                         android:text="单相"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="10px"
                         android:id="@+id/singlePhase"
                         android:checked="false"
                         android:textSize="@dimen/childFont"
@@ -336,9 +336,9 @@
                 <RadioGroup
 
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:layout_weight="1"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="30px"
                     android:layout_gravity="center_vertical"
 
                     android:orientation="horizontal"
@@ -346,7 +346,7 @@
                     >
                     <RadioButton
 
-                        android:layout_width="125dp"
+                        android:layout_width="125px"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:layout_gravity="center_vertical"
@@ -356,12 +356,12 @@
                         android:textSize="@dimen/childFont"
                         />
                     <RadioButton
-                        android:layout_width="125dp"
+                        android:layout_width="125px"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:layout_gravity="center_vertical"
                         android:text="双绕组"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="10px"
                         android:id="@+id/doubleRounds"
                         android:textSize="@dimen/childFont"
 
@@ -372,7 +372,7 @@
             </LinearLayout>
 <View
     android:layout_width="match_parent"
-    android:layout_height="1.5dp"
+    android:layout_height="1.5px"
     android:background="@color/grey"/>
 
         </LinearLayout>
@@ -382,7 +382,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="511dp"
+        android:layout_height="511px"
         android:layout_weight="7.9"
         android:orientation="horizontal"
         >
@@ -402,7 +402,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/btn_shape_operater"
                 android:text="添加"
-                android:layout_margin="5dp"
+                android:layout_margin="5px"
                 android:textColor="@color/white"
                 android:id="@+id/confirmBtn"
                 android:textSize="@dimen/transformer_add_btn_size" />
@@ -410,7 +410,7 @@
             <Button
 
                 android:layout_weight="2"
-                android:layout_margin="5dp"
+                android:layout_margin="5px"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/btn_shape_operater"

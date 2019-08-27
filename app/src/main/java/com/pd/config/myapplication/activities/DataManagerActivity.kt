@@ -2,12 +2,9 @@ package com.pd.config.myapplication.activities
 
 import android.app.Activity
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.*
 import com.pd.config.myapplication.R
@@ -23,7 +20,6 @@ import java.io.BufferedReader
 import java.io.File
 import java.io.FileInputStream
 import java.io.InputStreamReader
-import java.nio.charset.Charset
 import java.util.*
 
 class DataManagerActivity : Activity(), AdapterView.OnItemClickListener, View.OnClickListener {
@@ -353,7 +349,7 @@ class DataManagerActivity : Activity(), AdapterView.OnItemClickListener, View.On
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.data_manage_activity)
+        setContentView(R.layout.activity_data_manage)
         findResource()
         initRes()
         MTPUtils.scanMtpAsync(this)

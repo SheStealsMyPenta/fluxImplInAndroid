@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="25dp"
+                android:textSize="25px"
                 android:layout_height="match_parent"
                 android:text="数据管理"
                 android:gravity="center_vertical"
@@ -27,7 +27,7 @@
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="1.5dp"
+            android:layout_height="1.5px"
             android:background="@color/grey"
             />
         <LinearLayout
@@ -45,9 +45,9 @@
                 >
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:text="单位名称"
-                    android:textSize="20dp"
+                    android:textSize="20px"
                     android:background="@color/fbutton_color_peter_river"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -55,7 +55,7 @@
                     />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1.5dp"
+                    android:layout_height="1.5px"
                     android:background="@color/grey"/>
 
                 <ListView
@@ -67,7 +67,7 @@
 
             </LinearLayout>
             <View
-                android:layout_width="1.5dp"
+                android:layout_width="1.5px"
                 android:layout_height="match_parent"
                 android:background="@color/grey"/>
             <LinearLayout
@@ -79,9 +79,9 @@
                 >
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:text="变压器名称"
-                    android:textSize="20dp"
+                    android:textSize="20px"
                     android:background="@color/fbutton_color_peter_river"
                     android:textColor="@color/white"
 
@@ -90,7 +90,7 @@
                     />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1.5dp"
+                    android:layout_height="1.5px"
                     android:background="@color/grey"/>
                 <ListView
                     android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 </ListView>
             </LinearLayout>
             <View
-                android:layout_width="1.5dp"
+                android:layout_width="1.5px"
                 android:layout_height="match_parent"
                 android:background="@color/grey"/>
             <LinearLayout
@@ -113,9 +113,9 @@
                 >
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:text="测试日期"
-                    android:textSize="20dp"
+                    android:textSize="20px"
                     android:background="@color/fbutton_color_peter_river"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -123,7 +123,7 @@
                     />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1.5dp"
+                    android:layout_height="1.5px"
                     android:background="@color/grey"/>
                 <ListView
                     android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                 </ListView>
             </LinearLayout>
             <View
-                android:layout_width="1.5dp"
+                android:layout_width="1.5px"
                 android:layout_height="match_parent"
                 android:background="@color/grey"/>
             <LinearLayout
@@ -145,9 +145,9 @@
                 >
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="40px"
                     android:text="测试数据"
-                    android:textSize="20dp"
+                    android:textSize="20px"
                     android:background="@color/fbutton_color_peter_river"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -155,7 +155,7 @@
                     />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1.5dp"
+                    android:layout_height="1.5px"
                     android:background="@color/grey"/>
                 <ListView
                     android:layout_width="match_parent"
@@ -166,7 +166,7 @@
                 </ListView>
             </LinearLayout>
             <View
-                android:layout_width="1.5dp"
+                android:layout_width="1.5px"
                 android:layout_height="match_parent"
                 android:background="@color/grey"/>
             <LinearLayout
@@ -176,13 +176,13 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:layout_width="110dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_width="110px"
+                    android:layout_height="50px"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
                     android:text="打开"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
+                    android:textSize="16px"
                     android:background="@drawable/btn_shape_operater"
                     android:layout_gravity="center_horizontal"
                     android:id="@+id/openTheFile"
@@ -190,22 +190,22 @@
 
                 <Button
                     android:id="@+id/deleteTheFile"
-                    android:layout_width="110dp"
-                    android:layout_height="50dp"
+                    android:layout_width="110px"
+                    android:layout_height="50px"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15px"
+                    android:layout_marginBottom="15px"
                     android:background="@drawable/btn_shape_operater"
                     android:text="删除"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16px" />
                 <Button
-                    android:layout_width="110dp"
-                    android:layout_height="50dp"
+                    android:layout_width="110px"
+                    android:layout_height="50px"
                     android:text="返回"
-                    android:textSize="16dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:textSize="16px"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
                     android:textColor="@color/white"
                     android:background="@drawable/btn_shape_operater"
                     android:layout_gravity="center_horizontal"
@@ -215,7 +215,7 @@
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="1.5dp"
+            android:layout_height="1.5px"
             android:background="@color/grey"
             ></View>
 

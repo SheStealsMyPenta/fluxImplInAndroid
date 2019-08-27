@@ -6,14 +6,14 @@
     >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="40px"
         >
         <TextView
             android:background="@color/title"
-           android:paddingLeft="20dp"
+           android:paddingLeft="20px"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20dp"
+            android:textSize="20px"
             android:text="单位名称"
             android:textColor="@color/black"
             android:gravity="center_vertical"
@@ -36,7 +36,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.5dp"
+                android:layout_height="1.5px"
                 android:background="@color/grey"/>
 
             <LinearLayout
@@ -47,7 +47,7 @@
                 >
                 <!--<LinearLayout-->
                     <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_height="30px"-->
                     <!--android:orientation="horizontal"-->
                     <!--&gt;-->
                     <!--<TextView-->
@@ -57,12 +57,12 @@
                         <!--android:text="序 号"-->
                         <!--android:textColor="@color/black"-->
                         <!--android:gravity="center_vertical"-->
-                        <!--android:textSize="18dp"-->
+                        <!--android:textSize="18px"-->
                         <!--android:id="@+id/sort"-->
                         <!--android:textAlignment="center"-->
                         <!--/>-->
                     <!--<View-->
-                        <!--android:layout_width="1.0dp"-->
+                        <!--android:layout_width="1.0px"-->
                         <!--android:layout_height="match_parent"-->
                         <!--android:background="@color/grey"/>-->
                     <!--<TextView-->
@@ -73,14 +73,14 @@
                         <!--android:id="@+id/text1"-->
                         <!--android:gravity="center_vertical"-->
                         <!--android:text="变电站名"-->
-                        <!--android:textSize="18dp"-->
+                        <!--android:textSize="18px"-->
                         <!--android:textColor="@color/black"-->
                         <!--/>-->
 
                 <!--</LinearLayout>-->
                 <!--<View-->
                     <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="1.0dp"-->
+                    <!--android:layout_height="1.0px"-->
                     <!--android:background="@color/grey"/>-->
                 <ListView
                     android:layout_width="match_parent"
@@ -95,19 +95,19 @@
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="1.5dp"
+            android:layout_height="1.5px"
             android:background="@color/grey"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="40px"
             android:background="@color/white"
             >
             <TextView
                 android:background="@color/title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="20dp"
-                android:paddingLeft="20dp"
+                android:textSize="20px"
+                android:paddingLeft="20px"
                 android:text="设备名称      "
                 android:textColor="@color/black"
                 android:gravity="center_vertical"
@@ -123,7 +123,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1.5dp"
+                android:layout_height="1.5px"
                 android:background="@color/grey"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,7 +139,7 @@
                     >
                     <!--<LinearLayout-->
                         <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_height="30px"-->
                         <!--android:orientation="horizontal"-->
                         <!--&gt;-->
                         <!--<TextView-->
@@ -149,11 +149,11 @@
                             <!--android:text="序 号"-->
                             <!--android:textColor="@color/black"-->
                             <!--android:gravity="center_vertical"-->
-                            <!--android:textSize="18dp"-->
+                            <!--android:textSize="18px"-->
                             <!--android:textAlignment="center"-->
                             <!--/>-->
                         <!--<View-->
-                            <!--android:layout_width="1.0dp"-->
+                            <!--android:layout_width="1.0px"-->
                             <!--android:layout_height="match_parent"-->
                             <!--android:background="@color/grey"/>-->
                         <!--<TextView-->
@@ -163,14 +163,14 @@
                             <!--android:textAlignment="center"-->
                             <!--android:gravity="center_vertical"-->
                             <!--android:text="变压器名"-->
-                            <!--android:textSize="18dp"-->
+                            <!--android:textSize="18px"-->
                             <!--android:textColor="@color/black"-->
                             <!--/>-->
 
                     <!--</LinearLayout>-->
                     <!--<View-->
                         <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="1.0dp"-->
+                        <!--android:layout_height="1.0px"-->
                         <!--android:background="@color/grey"/>-->
                     <ListView
 
@@ -183,22 +183,22 @@
                 </ListView>
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="1.5dp"
+                        android:layout_height="1.5px"
                         android:background="@color/grey"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="4"
+                        android:layout_weight="5"
                         android:orientation="horizontal"
                         >
                         <Button
 
-                            android:layout_margin="5dp"
+                            android:layout_margin="5px"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:layout_marginBottom="5dp"
+                            android:layout_marginBottom="5px"
                             android:background="@drawable/btn_shape_operater"
                             android:text="选择"
                             android:textColor="@color/white"
@@ -206,46 +206,46 @@
                             android:visibility="gone"
                             android:textSize="@dimen/transformer_add_btn_size" />
                         <View
-                            android:layout_width="0dp"
-                            android:layout_height="7dp"/>
+                            android:layout_width="0px"
+                            android:layout_height="7px"/>
 
                         <Button
                             android:id="@+id/addTransBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
-                            android:layout_marginBottom="5dp"
+                            android:layout_margin="5px"
+                            android:layout_marginBottom="5px"
                             android:layout_weight="1"
                             android:background="@drawable/btn_shape_operater"
                             android:text="新增"
                             android:textColor="@color/white"
                             android:textSize="@dimen/transformer_add_btn_size" />
                         <View
-                            android:layout_width="0dp"
-                            android:layout_height="7dp"/>
+                            android:layout_width="0px"
+                            android:layout_height="7px"/>
                         <Button
-                            android:layout_margin="5dp"
+                            android:layout_margin="5px"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
                             android:layout_weight="1"
-                            android:layout_marginBottom="5dp"
+                            android:layout_marginBottom="5px"
                             android:background="@drawable/btn_shape_operater"
                             android:text="修改"
                             android:textColor="@color/white"
                             android:id="@+id/modifyTrans"
                             android:textSize="@dimen/transformer_add_btn_size" />
                         <View
-                            android:layout_width="0dp"
-                            android:layout_height="7dp"/>
+                            android:layout_width="0px"
+                            android:layout_height="7px"/>
                         <Button
-                            android:layout_margin="5dp"
+                            android:layout_margin="5px"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:id="@+id/deleteTransBtn"
                             android:background="@drawable/btn_shape_operater"
                             android:text="删除"
-                            android:layout_marginBottom="5dp"
+                            android:layout_marginBottom="5px"
                             android:textColor="@color/white"
                             android:textSize="@dimen/transformer_add_btn_size" />
 
@@ -253,7 +253,7 @@
                 </LinearLayout>
 
                 <View
-                    android:layout_width="1.5dp"
+                    android:layout_width="1.5px"
                     android:layout_height="match_parent"
                     android:background="@color/grey"/>
 

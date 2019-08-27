@@ -9,9 +9,9 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="50px"
             android:text="软件描述"
-            android:textSize="25dp"
+            android:textSize="25px"
             android:layout_weight="2"
             android:gravity="center_vertical"
             android:textAlignment="center"
@@ -22,22 +22,22 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_height="2dp"
+        android:layout_marginLeft="6px"
+        android:layout_marginRight="6px"
+        android:layout_height="2px"
         android:background="#DCDCDC"
         />
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_marginTop="10dp"
-    android:layout_height="40dp">
+    android:layout_marginTop="10px"
+    android:layout_height="45px">
 
     <Button
         android:id="@+id/back"
-        android:layout_width="120dp"
+        android:layout_width="125px"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="20px"
         android:background="@color/fbutton_color_belize_hole"
         android:text="返   回"
         android:textColor="@color/white"
@@ -45,37 +45,37 @@
         />
     <Button
         android:layout_gravity="end"
-        android:layout_width="120dp"
-        android:layout_marginLeft="20dp"
+        android:layout_width="125px"
+        android:layout_marginLeft="20px"
         android:layout_height="wrap_content"
         android:text="内部参数"
         android:textColor="@color/white"
         android:id="@+id/privateSetting"
-        android:elevation="20dp"
+        android:elevation="20px"
         android:background="@color/fbutton_color_belize_hole"
 
         />
 </LinearLayout>
 
  <com.pd.config.myapplication.views.NoScrollViewPage
-     android:layout_marginTop="20dp"
+     android:layout_marginTop="20px"
      android:layout_width="match_parent"
-     android:layout_height="300dp"
+     android:layout_height="300px"
      android:id="@+id/viewPager"/>
        <android.support.design.widget.TabLayout
-           android:layout_width="0dp"
+           android:layout_width="0px"
            android:id="@+id/tabLayout"
-           android:layout_height="0dp"/>
+           android:layout_height="0px"/>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="2px"
         android:background="#DCDCDC"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="5px"
         />
 <Button
-    android:layout_width="120dp"
-    android:layout_marginLeft="20dp"
-    android:layout_height="40dp"
+    android:layout_width="125px"
+    android:layout_marginLeft="30px"
+    android:layout_height="45px"
     android:text="设       置"
     android:id="@+id/config"
     android:visibility="invisible"

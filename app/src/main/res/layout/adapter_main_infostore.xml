@@ -5,7 +5,7 @@
     >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="18px"
         android:orientation="horizontal"
         >
         <TextView
@@ -15,7 +15,7 @@
             android:layout_weight="1"
             android:text=""
             android:textAlignment="center"
-            android:textSize="14dp"
+            android:textSize="13px"
             />
         <View
             android:layout_width="1px"
@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:text=""
-            android:textSize="14dp"
+            android:textSize="13px"
             android:textAlignment="center"
 
             />
@@ -43,7 +43,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:text=""
-            android:textSize="14dp"
+            android:textSize="13px"
             android:textAlignment="center"
 
             />-->
@@ -58,7 +58,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text=""
-            android:textSize="14dp"
+            android:textSize="13px"
 
             android:textAlignment="center" />
         <View
@@ -72,7 +72,7 @@
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:text=""
-            android:textSize="14dp"
+            android:textSize="13px"
             android:textAlignment="center" />
         <View
             android:layout_width="1px"
@@ -81,7 +81,7 @@
 
         <TextView
             android:id="@+id/text5"
-            android:textSize="14dp"
+            android:textSize="13px"
             android:layout_width="1dip"
             android:layout_height="match_parent"
             android:layout_weight="2"
@@ -100,7 +100,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:text=""
-            android:textSize="14dp"
+            android:textSize="13px"
             android:textAlignment="center" />
         <View
             android:layout_width="1px"
@@ -108,7 +108,7 @@
             android:background="#CCCCCC" />
         <TextView
             android:id="@+id/text7"
-            android:textSize="14dp"
+            android:textSize="13px"
             android:layout_width="1.5dip"
             android:layout_height="match_parent"
             android:layout_weight="4"

@@ -47,6 +47,7 @@ public class Conversions {
 
     }
     public static byte[] int2BytesArray(int n ){
+
         byte[] b = new byte[4];
         for(int i =0;i<4;i++){
             b[i] = (byte)(n>>(i*8));

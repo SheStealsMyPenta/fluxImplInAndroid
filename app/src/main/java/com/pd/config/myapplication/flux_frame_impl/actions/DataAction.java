@@ -28,7 +28,6 @@ public class DataAction extends Action {
         listOfDataAction.add(UPDATE_COLOUMN_SEVEN);
         listOfDataAction.add(UPDATE_COLOUMN_EIGHT);
         listOfDataAction.add(UPDATE_COLOUMN_NINE);
-
     }
 
     public DataAction(String type, Object data) {

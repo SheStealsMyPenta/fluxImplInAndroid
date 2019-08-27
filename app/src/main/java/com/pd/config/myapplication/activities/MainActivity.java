@@ -273,7 +273,7 @@ public class MainActivity extends BaseFluxActivity {
 //                        .setContentView(theView);
 //                mDialog.setCancelable(true);
 //                mDialog.show();
-//                logicService.changeStateOfScopeBtn();
+                logicService.changeStateOfScopeBtn();
                 break;
             default:
                 break;

@@ -13,23 +13,23 @@
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="50px"
+                android:layout_marginTop="5px"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="50px"
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="        输出幅值"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="45px"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:text="50"
@@ -38,7 +38,7 @@
                     android:background="@drawable/bg_edittext"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -47,35 +47,35 @@
                     android:gravity="center_vertical"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
+                android:layout_height="2px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="6px"
                 android:background="#DCDCDC" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
 
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="50px"
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="        输入阻抗"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="45px"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:text="50"
@@ -84,11 +84,11 @@
                     android:background="@drawable/bg_edittext"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_weight="5"
-                    android:textSize="25dp"
+                    android:textSize="25px"
 
                     android:textColor="@color/black"
                     android:gravity="center_vertical"
@@ -97,31 +97,31 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
+                android:layout_height="2px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="6px"
                 android:background="#DCDCDC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="50px"
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="        输出阻抗"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="45px"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:id="@+id/outputImpedance"
@@ -133,7 +133,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_weight="5"
-                    android:textSize="25dp"
+                    android:textSize="25px"
                     android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:textAlignment="center"
@@ -141,30 +141,30 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
+                android:layout_height="2px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="6px"
                 android:background="#DCDCDC" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="50px"
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="输入通道标定"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="45px"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:text="50"
@@ -172,11 +172,11 @@
                     android:background="@drawable/bg_edittext"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_weight="5"
-                    android:textSize="25dp"
+                    android:textSize="25px"
 
                     android:textColor="@color/black"
                     android:gravity="center_vertical"
@@ -185,31 +185,31 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
+                android:layout_height="2px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="6px"
                 android:background="#DCDCDC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="50px"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="50px"
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="输出通道标定"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="45px"
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:text="50"
@@ -217,11 +217,11 @@
                     android:background="@drawable/bg_edittext"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="25px" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_weight="5"
-                    android:textSize="25dp"
+                    android:textSize="25px"
 
                     android:textColor="@color/black"
                     android:gravity="center_vertical"
